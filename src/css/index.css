@@ -1,0 +1,21 @@
+ul.list-check>li::before {
+    font-family: sans-serif;
+    content: url('../img/check.svg');
+    color: #0D28A6;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 1.5em;
+    background: #CFD4ED;
+    padding-left: 4px;
+    padding-top: 4px;
+    border-radius: 50%;
+    margin-right: 0.25em;
+    transform: scale(0.65);
+}
+
+ul.list-check>li {
+    margin: 4px 0;
+    display: flex;
+    align-items: center;
+}
