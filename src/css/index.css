@@ -1,3 +1,7 @@
+body {
+    font-family: Helvetica;
+}
+
 ul.list-check>li::before {
     font-family: sans-serif;
     content: url('../img/check.svg');
@@ -18,4 +22,20 @@ ul.list-check>li {
     margin: 4px 0;
     display: flex;
     align-items: center;
+}
+
+@media only screen and (height <= 700px){
+    .h-section {
+        min-height: 100vh;
+    }
+
+    .h-section-1 {
+        height: 100vh;
+    }
+}
+
+@media only screen and (height > 700px){
+    .h-section {
+        min-height: 700px;
+    }
 }
