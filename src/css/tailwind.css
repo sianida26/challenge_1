@@ -9,3 +9,7 @@
 .why-us-item {
     @apply flex flex-col p-4 rounded-md border border-neutral-2 gap-4;
 }
+
+/* .figure {
+    @apply ;
+} */

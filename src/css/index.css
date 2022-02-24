@@ -3,7 +3,6 @@ body {
 }
 
 ul.list-check>li::before {
-    font-family: sans-serif;
     content: url('../img/check.svg');
     color: #0D28A6;
     display: inline-block;
@@ -22,6 +21,16 @@ ul.list-check>li {
     margin: 4px 0;
     display: flex;
     align-items: center;
+}
+
+.carousel-control-active {
+    background-color: #3D7B3F !important;
+    color: #fff !important;
+    border: 0 !important;
+}
+
+.star {
+    content: url('../img/star.svg');
 }
 
 @media only screen and (height <= 700px){
