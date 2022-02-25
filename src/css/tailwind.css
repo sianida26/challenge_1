@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .btn {
-    @apply whitespace-nowrap inline-flex items-center justify-center px-4 py-2 rounded-md shadow-sm text-base font-bold text-white bg-lime-4 hover:bg-lime-5 focus:ring-lime-4 focus:ring-offset-2 focus:ring-2 focus:outline-none
+    @apply whitespace-nowrap inline-flex items-center justify-center px-4 py-2 rounded-md shadow-sm text-base font-bold text-white bg-lime-4 hover:bg-lime-5 focus:ring-lime-4 focus:ring-2 focus:outline-none
 }
 
 .why-us-item {

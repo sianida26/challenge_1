@@ -1,3 +1,4 @@
+import './src/css/bootstrap.scss'
 import './src/css/tailwind.css'
 import './src/css/index.css'
 
@@ -7,7 +8,6 @@ import {
 } from './src/js/header.js'
 
 import {
-  play,
   playLeft,
   playRight,
 } from './src/js/carousel.js'
@@ -15,8 +15,6 @@ import {
 import feather from 'feather-icons'
 
 feather.replace() // Replace all feather icons with SVG
-
-play() // Start carousel
 
 document.querySelector('#mobile-menu-toggler').addEventListener('click', mobileMenuOpen)
 document.querySelector('#mobile-menu-close').addEventListener('click', mobileMenuClose)
