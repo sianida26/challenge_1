@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite App</title>
+		<script type="module" crossorigin src="/assets/index.0937ac0a.js"></script>
+		<link rel="modulepreload" href="/assets/vendor.9bcc5124.js">
+		<link rel="stylesheet" href="/assets/index.b65c8055.css">
+	</head>
+	<body class="overflow-x-hidden">
+
+		<!-- HEADER -->
+		<header class="w-full bg-[#F1F3FF] py-4 fixed top-0 shadow-md z-40">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6">
+				<div class="flex justify-between items-center border-gray-100 md:justify-between md:space-x-10">
+				  <div class="flex justify-start lg:w-0 lg:flex-1">
+					<a href="#">
+					  <span class="sr-only">Workflow</span>
+					  <div class="h-4 w-12 bg-dark-blue-4"></div>
+					  <!-- <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt=""> -->
+					</a>
+				  </div>
+				  <div class="-mr-2 -my-2 md:hidden">
+					<button id="mobile-menu-toggler" type="button" class="rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+					  <span class="sr-only">Open menu</span>
+					  <!-- Heroicon name: outline/menu -->
+					  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+					  </svg>
+					</button>
+				  </div>
+				  <div class="hidden md:flex items-center">
+
+					  <nav class="space-x-5">			
+						  <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> Our Services </a>
+						  <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> Why Us </a>
+						  <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> Testimonial </a>
+						  <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> FAQ </a>
+						</nav>
+						<div class="items-center justify-end">
+							<!-- <a href="#" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"> Sign in </a> -->
+							<a href="#" class="ml-5 btn"> Register </a>
+						</div>
+					</div>
+				</div>
+			  </div>
+			
+			  <!-- Mobile menu -->
+			  <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden hidden duration-200 ease-out" id="mobile-menu">
+				<div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+				  <div class="pt-5 pb-6 px-5">
+					<div class="flex items-center justify-between">
+					  <div>
+						  <div class="h-4 w-12 bg-dark-blue-4"></div>
+						<!-- <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow"> -->
+					  </div>
+					  <div class="-mr-2">
+						<button id="mobile-menu-close" type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+						  <span class="sr-only">Close menu</span>
+						  <!-- Heroicon name: outline/x -->
+						  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+						  </svg>
+						</button>
+					  </div>
+					</div>
+					<div class="mt-6">
+					  <nav class="grid gap-y-8">
+						<a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+						  <!-- Heroicon name: outline/chart-bar -->
+						  <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+						  </svg>
+						  <span class="ml-3 text-base font-medium text-gray-900"> Our Services </span>
+						</a>
+			
+						<a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+						  <!-- Heroicon name: outline/cursor-click -->
+						  <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+						  </svg>
+						  <span class="ml-3 text-base font-medium text-gray-900"> Why Us </span>
+						</a>
+			
+						<a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+						  <!-- Heroicon name: outline/shield-check -->
+						  <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+						  </svg>
+						  <span class="ml-3 text-base font-medium text-gray-900"> Testimonial </span>
+						</a>
+			
+						<a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+						  <!-- Heroicon name: outline/view-grid -->
+						  <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+						  </svg>
+						  <span class="ml-3 text-base font-medium text-gray-900"> FAQ </span>
+						</a>
+					  </nav>
+					</div>
+				  </div>
+				</div>
+			</div>
+		</header>
+
+		<!-- SECTION 1 -->
+		<section class="h-screen lg:h-[700px] w-screen bg-[#F1F3FF]">
+			<div class="max-w-7xl h-full flex relative justify-center items-center px-4 md:justify-start mx-auto">
+				<div class="flex flex-col gap-2 z-[1] md:w-1/2">
+					<h1 class="font-bold text-2xl">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
+					<p class="text-sm">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+					<div>
+						<button class="btn">Mulai Sewa Mobil</button>
+					</div>
+				</div>
+				<div class="absolute top-0 left-0 w-full h-full z-[0]">
+					<div class="absolute bg-dark-blue-4 w-3/4 md:w-1/2 right-0 h-16 md:h-1/3 bottom-0 rounded-tl-3xl">
+
+					</div>
+					<img src="/assets/car.c42a72cb.png" alt="Mobil" class="absolute bottom-0 w-1/2 right-6 md:right-0 md:top-1/2">
+				</div>
+			</div>
+		</section>
+
+		<!-- SECTION 2 -->
+		<section class="h-section w-screen bg-white">
+			<div class="max-w-7xl mx-auto flex flex-col md:flex-row py-8 gap-4 px-8 h-full">
+				<div class="flex justify-center md:w-1/2 md:flex-shrink-0 md:items-center">
+					<img src="/assets/img_service.2ff2e9f1.png" alt="Our Services" class="w-24 object-cover md:w-3/4 bg-auto">
+				</div>
+				<div class="flex flex-col md:justify-center">
+					<h1 class="font-bold text-xl text-center md:text-left">Best Car Rental for any kind of trip in (Lokasimu)!</h1>
+					<p class="text-center text-sm md:text-left">Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
+					<ul class="text-sm mt-4 list-check">
+						<li>Sewa Mobil Dengan Supir di Bali 12 Jam</li>
+						<li>Sewa Mobil Lepas Kunci di Bali 24 Jam</li>
+						<li>Sewa Mobil Jangka Panjang Bulanan</li>
+						<li>Gratis Antar - Jemput Mobil di Bandara</li>
+						<li>Layanan Airport Transfer / Drop In Out</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<!-- SECTION 3 -->
+		<section class="h-section w-screen bg-white">
+			<div class="max-w-7xl mx-auto flex flex-col py-8 px-8 h-full">
+				<h1 class="font-bold text-xl text-center md:text-left">Why Us</h1>
+				<p class="text-sm text-center md:text-left">Mengapa harus pilih Binar Car Rental?</p>
+
+				<div class="gap-2 mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-4 xl:gap-8">
+					<div class="why-us-item">
+						<span class="w-10 h-10 bg-alert-warning rounded-full flex items-center justify-center text-white">
+							<i data-feather="thumbs-up"></i>
+						</span>
+
+						<h3 class="font-semibold">Mobil Lengkap</h3>
+						<p class="text-sm font-light">Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
+					</div>
+					<div class="why-us-item">
+						<span class="w-10 h-10 bg-alert-danger rounded-full flex items-center justify-center text-white">
+							<i data-feather="tag"></i>
+						</span>
+
+						<h3 class="font-semibold">Harga Murah</h3>
+						<p class="text-sm font-light">Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
+					</div>
+					<div class="why-us-item">
+						<span class="w-10 h-10 bg-dark-blue-4 rounded-full flex items-center justify-center text-white">
+							<i data-feather="clock"></i>
+						</span>
+
+						<h3 class="font-semibold">Layanan 24 Jam</h3>
+						<p class="text-sm font-light">Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
+					</div>
+					<div class="why-us-item">
+						<span class="w-10 h-10 bg-lime-4 rounded-full flex items-center justify-center text-white">
+							<i data-feather="award"></i>
+						</span>
+
+						<h3 class="font-semibold">Sopir Profesional</h3>
+						<p class="text-sm font-light">Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SECTION 4 -->
+		<section class="h-section w-screen bg-white">
+			<div class="mx-auto flex flex-col py-8 px-8 h-full">
+				<h1 class="max-w-7xl mx-auto font-bold text-xl text-center">Testimonial</h1>
+				<p class="max-w-7xl mx-auto text-sm text-center">Berbagai review positif dari para pelanggan kami</p>
+
+				<!-- CAROUSEL -->
+				<div class="relative h-72 md:h-64 w-full mt-8 overflow-visible">
+					<div class="absolute h-full top-0 -left-8 right-0 w-screen overflow-hidden flex" id="figure-container">
+						<div class="w-auto flex transform -translate-x-[calc(100vw-3.1rem)] md:-translate-x-[76rem]">
+							<figure class="h-72 md:h-64 z-[2] px-4 transform">
+								<div class="relative flex flex-col gap-2 p-4 bg-[#F1F3FF] rounded-xl w-[calc(100vw-4rem)] md:w-[36rem] md:flex-shrink-0">
+									<div class="flex justify-center">
+										<img src="https://i.pravatar.cc/300?r=1" alt="orang" class="w-16 h-16 rounded-full">
+									</div>
+									<div class="flex flex-col items-center gap-2">
+										<!-- rating -->
+										<div class="flex">
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+										</div>
+										<p class="text-sm">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+										<p class="font-semibold text-sm text-left w-full">John Dee 32, Bromo</p>
+									</div>
+								</div>
+							</figure>
+							<figure class="h-72 md:h-64 z-[2] px-4 transform">
+								<div class="relative flex flex-col gap-2 p-4 bg-[#F1F3FF] rounded-xl w-[calc(100vw-4rem)] md:w-[36rem] md:flex-shrink-0">
+									<div class="flex justify-center">
+										<img src="https://i.pravatar.cc/300?r=2" alt="orang" class="w-16 h-16 rounded-full">
+									</div>
+									<div class="flex flex-col items-center gap-2">
+										<!-- rating -->
+										<div class="flex">
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+										</div>
+										<p class="text-sm">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+										<p class="font-semibold text-sm text-left w-full">John Dee 32, Bromo</p>
+									</div>
+								</div>
+							</figure>
+							<figure class="h-72 md:h-64 z-[2] px-4 transform">
+								<div class="relative flex flex-col gap-2 p-4 bg-[#F1F3FF] rounded-xl w-[calc(100vw-4rem)] md:w-[36rem] md:flex-shrink-0">
+									<div class="flex justify-center">
+										<img src="https://i.pravatar.cc/300?r=3" alt="orang" class="w-16 h-16 rounded-full">
+									</div>
+									<div class="flex flex-col items-center gap-2">
+										<!-- rating -->
+										<div class="flex">
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+										</div>
+										<p class="text-sm">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+										<p class="font-semibold text-sm text-left w-full">John Dee 32, Bromo</p>
+									</div>
+								</div>
+							</figure>
+							<figure class="h-72 md:h-64 z-[2] px-4 transform">
+								<div class="relative flex flex-col gap-2 p-4 bg-[#F1F3FF] rounded-xl w-[calc(100vw-4rem)] md:w-[36rem] md:flex-shrink-0">
+									<div class="flex justify-center">
+										<img src="https://i.pravatar.cc/300?r=4" alt="orang" class="w-16 h-16 rounded-full">
+									</div>
+									<div class="flex flex-col items-center gap-2">
+										<!-- rating -->
+										<div class="flex">
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+										</div>
+										<p class="text-sm">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+										<p class="font-semibold text-sm text-left w-full">John Dee 32, Bromo</p>
+									</div>
+								</div>
+							</figure>
+							<figure class="h-72 md:h-64 z-[2] px-4 transform">
+								<div class="relative flex flex-col gap-2 p-4 bg-[#F1F3FF] rounded-xl w-[calc(100vw-4rem)] md:w-[36rem] md:flex-shrink-0">
+									<div class="flex justify-center">
+										<img src="https://i.pravatar.cc/300?r=5" alt="orang" class="w-16 h-16 rounded-full">
+									</div>
+									<div class="flex flex-col items-center gap-2">
+										<!-- rating -->
+										<div class="flex">
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+										</div>
+										<p class="text-sm">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+										<p class="font-semibold text-sm text-left w-full">John Dee 32, Bromo</p>
+									</div>
+								</div>
+							</figure>
+							<figure class="h-72 md:h-64 z-[2] px-4 transform">
+								<div class="relative flex flex-col gap-2 p-4 bg-[#F1F3FF] rounded-xl w-[calc(100vw-4rem)] md:w-[36rem] md:flex-shrink-0">
+									<div class="flex justify-center">
+										<img src="https://i.pravatar.cc/300?r=6" alt="orang" class="w-16 h-16 rounded-full">
+									</div>
+									<div class="flex flex-col items-center gap-2">
+										<!-- rating -->
+										<div class="flex">
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+										</div>
+										<p class="text-sm">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+										<p class="font-semibold text-sm text-left w-full">John Dee 32, Bromo</p>
+									</div>
+								</div>
+							</figure>
+							<figure class="h-72 md:h-64 z-[2] px-4 transform">
+								<div class="relative flex flex-col gap-2 p-4 bg-[#F1F3FF] rounded-xl w-[calc(100vw-4rem)] md:w-[36rem] md:flex-shrink-0">
+									<div class="flex justify-center">
+										<img src="https://i.pravatar.cc/300?r=7" alt="orang" class="w-16 h-16 rounded-full">
+									</div>
+									<div class="flex flex-col items-center gap-2">
+										<!-- rating -->
+										<div class="flex">
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+										</div>
+										<p class="text-sm">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+										<p class="font-semibold text-sm text-left w-full">John Dee 32, Bromo</p>
+									</div>
+								</div>
+							</figure>
+							<figure class="h-72 md:h-64 z-[2] px-4 transform">
+								<div class="relative flex flex-col gap-2 p-4 bg-[#F1F3FF] rounded-xl w-[calc(100vw-4rem)] md:w-[36rem] md:flex-shrink-0">
+									<div class="flex justify-center">
+										<img src="https://i.pravatar.cc/300?r=8" alt="orang" class="w-16 h-16 rounded-full">
+									</div>
+									<div class="flex flex-col items-center gap-2">
+										<!-- rating -->
+										<div class="flex">
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+										</div>
+										<p class="text-sm">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+										<p class="font-semibold text-sm text-left w-full">John Dee 32, Bromo</p>
+									</div>
+								</div>
+							</figure>
+							<figure class="h-72 md:h-64 z-[2] px-4 transform">
+								<div class="relative flex flex-col gap-2 p-4 bg-[#F1F3FF] rounded-xl w-[calc(100vw-4rem)] md:w-[36rem] md:flex-shrink-0">
+									<div class="flex justify-center">
+										<img src="https://i.pravatar.cc/300?r=9" alt="orang" class="w-16 h-16 rounded-full">
+									</div>
+									<div class="flex flex-col items-center gap-2">
+										<!-- rating -->
+										<div class="flex">
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+										</div>
+										<p class="text-sm">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+										<p class="font-semibold text-sm text-left w-full">John Dee 32, Bromo</p>
+									</div>
+								</div>
+							</figure>
+							<figure class="h-72 md:h-64 z-[2] px-4 transform">
+								<div class="relative flex flex-col gap-2 p-4 bg-[#F1F3FF] rounded-xl w-[calc(100vw-4rem)] md:w-[36rem] md:flex-shrink-0">
+									<div class="flex justify-center">
+										<img src="https://i.pravatar.cc/300?r=10" alt="orang" class="w-16 h-16 rounded-full">
+									</div>
+									<div class="flex flex-col items-center gap-2">
+										<!-- rating -->
+										<div class="flex">
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+											<i class="star"></i>
+										</div>
+										<p class="text-sm">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”</p>
+										<p class="font-semibold text-sm text-left w-full">John Dee 32, Bromo</p>
+									</div>
+								</div>
+							</figure>
+						</div>
+					</div>
+				</div>
+				<div class="flex justify-center gap-4 mt-4">
+					<button class="w-8 h-8 rounded-full border border-[#C4C4C4] text-[#222222] carousel-control-active" id="carousel-left">
+						<i data-feather="chevron-left" class="ml-0.5"></i>
+					</button>
+					<button class="w-8 h-8 rounded-full border border-[#C4C4C4] text-[#222222]" id="carousel-right">
+						<i data-feather="chevron-right" class="ml-1"></i>
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- SECTION 5 -->
+		<section class="h-section w-screen bg-white py-8 lg:px-8">
+			<div class="max-w-7xl mx-auto flex flex-col py-8 px-8 h-full bg-dark-blue-4 text-center items-center text-white	gap-6 lg:rounded-xl">
+				<h1 class="text-2xl font-bold text-white">Sewa Mobil di (Lokasimu) Sekarang</h1>
+				<p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+				<div>
+					<button class="btn text-sm">Mulai Sewa Mobil</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- SECTION 6 -->
+		<section class="h-section w-screen bg-white">
+			<div class="max-w-7xl mx-auto flex flex-col md:flex-row py-8 gap-4 px-8 h-full">
+				<div class="flex justify-center md:w-1/2 md:flex-shrink-0 flex-col">
+					<h1 class="text-2xl font-bold">Frequently Asked Question</h1>
+					<p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+				</div>
+				<div class="flex flex-col md:justify-center">
+					<div class="accordion" id="accordionExample">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingOne">
+							  <button class="accordion-button collapsed text-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+								Apa saja syarat yang dibutuhkan?
+							  </button>
+							</h2>
+							<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							  <div class="accordion-body text-sm">
+								  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+						  <h2 class="accordion-header" id="headingTwo">
+							<button class="accordion-button collapsed text-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Berapa hari minimal sewa mobil lepas kunci?
+							</button>
+						  </h2>
+						  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+							<div class="accordion-body text-sm">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</div>
+						  </div>
+						</div>
+						<div class="accordion-item">
+						  <h2 class="accordion-header" id="headingThree">
+							<button class="accordion-button collapsed text-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								Berapa hari sebelumnya sabaiknya booking sewa mobil?
+							</button>
+						  </h2>
+						  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+							<div class="accordion-body text-sm">
+							  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</div>
+						  </div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingFour">
+							  <button class="accordion-button collapsed text-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								Apakah Ada biaya antar-jemput?
+							  </button>
+							</h2>
+							<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+							  <div class="accordion-body text-sm">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingFive">
+								<button class="accordion-button collapsed text-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+									Bagaimana jika terjadi kecelakaan
+								</button>
+							</h2>
+							<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+								<div class="accordion-body text-sm">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="w-screen text-xs">
+			<div class="max-w-7xl mx-auto grid grid-cols-1 py-8 gap-4 px-8 md:grid-cols-4">
+				<div class="flex flex-col font-light gap-2 text-center text-">
+					<p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+					<p>binarcarrental@gmail.com</p>
+					<p>081-233-334-808</p>
+				</div>
+
+				<div class="flex justify-between md:flex-col md:items-center md:text-center">
+					<p>Our services</p>
+					<p>Why Us</p>
+					<p>Testimonial</p>
+					<p>FAQ</p>
+				</div>
+
+				<div class="flex flex-col gap-4 mt-6">
+					<p class="text-center ">Connect with us</p>
+					<div class="flex justify-center gap-2">
+						<div class="w-8 h-8 rounded-full bg-dark-blue-4 text-white flex items-center justify-center"><i data-feather="facebook" class="w-5"></i></div>
+						<div class="w-8 h-8 rounded-full bg-dark-blue-4 text-white flex items-center justify-center"><i data-feather="instagram" class="w-5"></i></div>
+						<div class="w-8 h-8 rounded-full bg-dark-blue-4 text-white flex items-center justify-center"><i data-feather="twitter" class="w-5"></i></div>
+						<div class="w-8 h-8 rounded-full bg-dark-blue-4 text-white flex items-center justify-center"><i data-feather="mail" class="w-5"></i></div>
+						<div class="w-8 h-8 rounded-full bg-dark-blue-4 text-white flex items-center justify-center"><i data-feather="twitch" class="w-5"></i></div>
+					</div>
+				</div>
+
+				<div class="flex flex-col gap-2 mt-6">
+					<p class="text-center">Copyright Binar 2022</p>
+					<div>
+						<div class="mx-auto w-16 h-6 bg-dark-blue-4"></div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	</body>
+</html>
